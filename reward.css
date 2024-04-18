@@ -47,8 +47,9 @@ body {
 .btn1 {
     background-color: rgb(116, 77, 161);
     color: #d0c6d1;
-    border-radius: 12px;
-    padding: 14px 40px;
+    border-radius: 15px;
+    width: 80px;
+    height:55px;
 }
 
 .btn2 {
@@ -117,3 +118,10 @@ body {
     height: 25;
 }
 
+.reward-description {
+    margin: 25px;
+    padding: 50px;
+    border: solid black 2px;
+    width: 500px;
+    height: 150px;
+}
