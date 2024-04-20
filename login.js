@@ -8,7 +8,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     // Simple check for username and password
     if (username === "admin" && password === "admin123") {
         alert("Login successful!");
-        window.location.href = "index.html"; // Redirect to index.html
+        window.location.href = "aboutus_contact/index.html"; // Redirect to index.html
     } else {
         document.getElementById("login-error").textContent = "Invalid username or password.";
     }
