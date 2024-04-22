@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Point</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>PROGRESS POINT</h1>
+        <div id="pointContainer">
+            <div id="pointLevel">
+                <div id="pointFill"></div>
+                <div id="pointText">0</div>
+            </div>
+            <div id="buttonsContainer">
+                <button onclick="addPoint()">Add Point</button>
+                <a href="Reward_Index.html" id="exchangeLink">Exchange Points</a> <!-- Exchange point link bar -->
+            </diV>
+        </div>
+    </div>
+
+    <script>
+        let currentPoint = 0;
+
+        function addPoint() {
+            currentPoint++;
+            updateProgress();
+        }
+
+        function updateProgress() {
+            document.getElementById('pointText').innerText = currentPoint.toFixed(0);
+            let barWidth = (currentPoint.toString().length * 20) + 40; // Adjusting width based on number length
+            document.getElementById('pointLevel').style.width = barWidth + 'px';
+        }
+
+        document.getElementById('exchangeLink').addEventListener('click', function() {
+            // Redirect user to the exchange link
+            window.location.href = 'https://example.com/exchange'; // Replace with your exchange link
+        });
+    </script>
+</body>
+</html>
